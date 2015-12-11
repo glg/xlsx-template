@@ -65,7 +65,7 @@ those objects have keys `name` and `age`, you may end up with something like:
     | John Smith  | 20  |
     | Bob Johnson | 22  |
 
-If a particular value is an array, then it will be repeated accross columns as
+If a particular value is an array, then it will be repeated across columns as
 above.
 
 ## Generating reports
@@ -86,7 +86,7 @@ To make this magic happen, you need some code like this:
         // Set up some placeholder values matching the placeholders in the template
         var values = {
                 extractDate: new Date(),
-                dates: new Date("2013-06-01"), new Date("2013-06-02"), new Date("2013-06-03"),
+                dates: [ new Date("2013-06-01"), new Date("2013-06-02"), new Date("2013-06-03") ],
                 people: [
                     {name: "John Smith", age: 20},
                     {name: "Bob Johnson", age: 22}
